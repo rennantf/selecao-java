@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "55b36241-93b1-4d89-9b82-3eb8ea128c60",
+		"name": "Desafio Seleção Indra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login API",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				},
+				"description": "Rota responsável por gerar o token, necessária para efetuar o login na aplicação sem interface gráfica"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
